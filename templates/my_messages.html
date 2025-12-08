@@ -36,58 +36,59 @@ content %}
       onmouseover="this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'"
       onmouseout="this.style.boxShadow='none'"
     >
-      <div style="flex: 1">
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 5px;
-          "
-        >
-          {% if chat.status == 'sold' %}
-          <span
+      <div style="flex: 1; display: flex; align-items: center; gap: 12px">
+        <div class="profile-img profile-img--chatlist"></div>
+          <div
             style="
-              background: #eee;
-              color: #666;
-              padding: 2px 6px;
-              border-radius: 4px;
-              font-size: 12px;
-              font-weight: bold;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              margin-bottom: 5px;
             "
           >
-            거래완료
-          </span>
-          {% elif chat.status == 'reserved' %}
-          <span
-            style="
-              background: #fff3cd;
-              color: #856404;
-              padding: 2px 6px;
-              border-radius: 4px;
-              font-size: 12px;
-              font-weight: bold;
-            "
-          >
-            예약중
-          </span>
-          {% else %}
-          <span
-            style="
-              background: #d4edda;
-              color: #155724;
-              padding: 2px 6px;
-              border-radius: 4px;
-              font-size: 12px;
-              font-weight: bold;
-            "
-          >
-            판매중
-          </span>
-          {% endif %}
+            {% if chat.status == 'sold' %}
+            <span
+              style="
+                background: #eee;
+                color: #666;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: bold;
+              "
+            >
+              거래완료
+            </span>
+            {% elif chat.status == 'reserved' %}
+            <span
+              style="
+                background: #fff3cd;
+                color: #856404;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: bold;
+              "
+            >
+              예약중
+            </span>
+            {% else %}
+            <span
+              style="
+                background: #d4edda;
+                color: #155724;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: bold;
+              "
+            >
+              판매중
+            </span>
+            {% endif %}
 
-          <h3 style="margin: 0; font-size: 18px">{{ chat.item_name }}</h3>
-        </div>
+            <h3 style="margin: 0; font-size: 18px">{{ chat.item_name }}</h3>
+          </div>
 
         <p style="margin: 0; color: #666; font-size: 14px">
           Chat with: <strong>@{{ chat.with_user }}</strong>

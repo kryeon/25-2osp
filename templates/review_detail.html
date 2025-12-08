@@ -8,9 +8,9 @@
   <!-- 🔹 판매자 + 상품 정보 -->
   <div class="seller-box box">
     <div class="seller-info">
-      <!-- 판매자 프로필 (고정 이미지 유지) -->
+      <!-- 판매자 프로필 아이콘 -->
       <div class="profile-pic">
-        <img src="/static/images/fake_profile.png" alt="판매자 프로필" />
+        <div class="profile-img profile-img--review-seller"></div>
       </div>
 
       <!-- 판매자 / 위치 / 평점 -->
@@ -55,8 +55,7 @@
   <div class="review-container box">
     <div class="review-header">
       <div class="user-info">
-        <!-- 작성자 프로필 (고정 이미지 유지) -->
-        <img src="/static/images/fake_profile.png" alt="작성자 프로필" />
+        <div class="profile-img profile-img--review-author"></div>
         <div>
           <div class="review-user">@{{ data.user or 'ewha_user' }}</div>
           <div class="review-rating">
