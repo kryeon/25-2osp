@@ -24,7 +24,7 @@
 
         <!-- 이 부분은 예시값 그대로 두고, 별점은 리뷰 rate 사용 -->
         {% set rate = (data.rate or 0) | int %}
-        총 거래 횟수: 20회<br />
+        <!--총 거래 횟수: 20회<br />-->
         평점:
         <span class="stars">
           {% for _ in range(rate) %}⭐{% endfor %}
@@ -86,12 +86,12 @@
       <strong>{{ data.title or '제목 없음' }}</strong>
       <p>{{ data.review or '(리뷰 내용 없음)' }}</p>
     </div>
-
+    <!--
     <div class="helpful-section">
       <button>👍</button>
       <span>리뷰가 도움이 되었어요</span>
     </div>
-
+    -->
 
 <!-- 🔹 pros → 해시태그 -->
     {% set pros_raw = data.pros or '' %}
