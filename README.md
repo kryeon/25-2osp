@@ -14,6 +14,7 @@
   + 마음에 드는 물건을 사용자별로 모아볼 수 있는 찜 기능
 
 > 발표 PPT : https://canva.link/3965ma99jwnvh6u
+
 > 기술 블로그 : https://reallyreallysorry.tistory.com/
 
 
