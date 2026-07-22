@@ -4,7 +4,7 @@
 ### 주제: EWHA MARKET (중고거래 사이트)
 
 >구조:
-  + 브라우저 <-> FLAXK 서버 <-> FIREBASE REALTIME DATABASE
+  + 브라우저 <-> FLASK 서버 <-> FIREBASE REALTIME DATABASE
   + 프론트엔드: HTTML, CSS, JAVASCRIPT
   + 백엔드: FLASK (Python)
   + 데이터베이스: FLASK (Python)
